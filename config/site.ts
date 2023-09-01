@@ -4,66 +4,35 @@ export const siteConfig = {
 	name: "Next.js + NextUI",
 	description: "Make beautiful websites regardless of your design experience.",
 	navItems: [
-		{
-			label: "Home",
-			href: "/",
-		},
-    {
-      label: "Docs",
-      href: "/docs",
-    },
-    {
-      label: "Pricing",
-      href: "/pricing",
-    },
-    {
-      label: "Blog",
-      href: "/blog",
-    },
-    {
-      label: "About",
-      href: "/about",
-    }
-	],
-	navMenuItems: [
-		{
-			label: "Profile",
-			href: "/profile",
-		},
-		{
-			label: "Dashboard",
-			href: "/dashboard",
-		},
-		{
-			label: "Projects",
-			href: "/projects",
-		},
-		{
-			label: "Team",
-			href: "/team",
-		},
-		{
-			label: "Calendar",
-			href: "/calendar",
-		},
-		{
-			label: "Settings",
-			href: "/settings",
-		},
-		{
-			label: "Help & Feedback",
-			href: "/help-feedback",
-		},
-		{
-			label: "Logout",
-			href: "/logout",
-		},
-	],
-	links: {
-		github: "https://github.com/nextui-org/nextui",
-		twitter: "https://twitter.com/getnextui",
-		docs: "https://nextui-docs-v2.vercel.app",
-		discord: "https://discord.gg/9b6yyZKmH4",
-    sponsor: "https://patreon.com/jrgarciadev"
+	{
+		id:1,
+		label: "HOME",
+		href: "/",
 	},
+    {
+	  id:2,
+      label: "WORKS",
+      href: "/works",
+    },
+    {
+		id:3,
+      label: "TECHNOLOGIES",
+      href: "/technologies",
+    },
+    {
+		id:4,
+      label: "SERVICES",
+      href: "/services",
+    },
+    {
+		id:5,
+      label: "COMPANY",
+      href: "/company",
+    },
+	{
+		id:6,
+		label: "CONTACTS",
+		href: "/contacts",
+	  }
+	],
 };
