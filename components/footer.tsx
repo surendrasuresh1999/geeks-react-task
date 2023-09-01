@@ -1,4 +1,5 @@
 import { footerData } from "@/data";
+import Image from "next/image";
 
 
 const Footer = () => {
@@ -16,14 +17,19 @@ const Footer = () => {
             </div>
             <div className='grid grid-cols-12 gap-4 pt-14 md:pt-24'>
                 <div className='col-span-12 md:col-span-3'>
-                    <img src="https://geeksinvention.com/assets/v2/content/geeks-logo-white.svg" />
+                <Image
+						src="https://geeksinvention.com/assets/v2/content/geeks-logo-white.svg"
+						alt="Geeks Invention Logo"
+						width={220}
+						height={100}
+					/>
                     <address className='py-4 text-base'>
                         447 Broadway, 2nd Floor Suite #772,<br /> New York 10013, United States,
                         <br />
                         +1-347-535-0004 
                     </address>
                 </div>
-                
+
                 <div className="block md:hidden col-span-12 md:col-span-6 ">
                     <div className='grid grid-cols-12 gap-4'>
                         {

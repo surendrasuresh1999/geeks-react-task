@@ -8,7 +8,7 @@ import {
 	NavbarItem,
 	NavbarMenuItem,
 } from "@nextui-org/react";
-
+import Image from 'next/image';
 import { siteConfig } from "@/config/site";
 import NextLink from "next/link";
 
@@ -22,7 +22,12 @@ export const Navbar = () => {
 			<NavbarContent className="basis-1/5 sm:basis-full" justify="start">
 				<NavbarBrand className="gap-3 max-w-fit">
 					<NextLink href="/">
-						<img src="https://geeksinvention.com/assets/v2/content/geeks-logo-white.svg" />
+					<Image
+						src="https://geeksinvention.com/assets/v2/content/geeks-logo-white.svg"
+						alt="Geeks Invention Logo"
+						width={220}
+						height={100}
+					/>
 					</NextLink>
 				</NavbarBrand>
 			</NavbarContent>
