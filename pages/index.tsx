@@ -1,8 +1,8 @@
 
 import DefaultLayout from "@/layouts/default";
 import { platformsData, dedicatedData, clientsData, techData } from "../data"
+import Image from "next/image";
 
-const hexcodes = ["#3f2caa", "#01b5ac", "#19181e"]
 
 export default function IndexPage() {
 	return (
@@ -36,6 +36,7 @@ export default function IndexPage() {
 								<div className="container mx-auto py-10">
 									<div className="grid md:grid-cols-2 gap-x-10 lg:gap-x-20">
 										<div className={`hidden md:block ${dataObj.id === 1 ? "order-1" : ""}`}>
+											
 											<img src={dataObj.url} className="h-full w-full" alt={dataObj.altText} />
 										</div>
 										<div className="px-5 flex flex-col justify-center items-center md:justify-start md:items-start">
@@ -51,7 +52,12 @@ export default function IndexPage() {
 													</button>
 												))}
 											</div>
-											<img src={dataObj.url} className="py-6 h-[300px] w-[300px] block md:hidden" alt={dataObj.altText} />
+											<img
+												src={dataObj.url}
+												alt="mobile-device-image"
+												className="py-6 h-full w-full block md:hidden"
+											/>
+											
 											<p className="text-xl py-4 lg:py-8 text-justify font-semibold md:text-2xl lg:text-2xl">
 												{dataObj.description}
 											</p>
@@ -64,12 +70,11 @@ export default function IndexPage() {
 							</div>
 						))
 					}
-
-
 				</div>
 			</section>
 
-			<section className="relative z-10 bg-[#16181c] px-5">
+			<section className="relative z-[10] bg-[#16181c] px-5">
+
 				<div className="container flex flex-col justify-center items-center mx-auto py-10 lg:py-20">
 					<div className="max-w-[800px]">
 						<h1 className="text-white font-semibold text-3xl md:text-5xl lg:text-5xl text-center tracking-wide py-6">Check out more works by Geeks Invention</h1>
@@ -83,7 +88,7 @@ export default function IndexPage() {
 					</button>
 				</div>
 				{/* receant clients section */}
-				<div className="container flex flex-col mx-auto py-10 lg:py-20">
+				<div className="container flex flex-col justify-center items-center mx-auto py-10 lg:py-20">
 					<div>
 						<h1 className="text-white font-bold text-3xl md:text-5xl lg:text-7xl text-center tracking-wide py-6">Recent clients</h1>
 						<p className="text-white text-base md:text-xl max-w-[800px] mx-auto text-center py-2 md:py-6">
@@ -91,13 +96,14 @@ export default function IndexPage() {
 							World's 4th Strongest Banking Brand, Automobile & IoT industry
 						</p>
 					</div>
-					<ul role="list" className="grid grid-cols-12 gap-8 py-10 lg:py-20">
+					<ul className="grid grid-cols-12 gap-8 py-10 lg:py-20">
 						{clientsData.map((data) => (
 							<li
 								key={data.id}
-								className="flex flex-col justify-center items-center py-10 col-span-12 md:col-span-6 lg:col-span-4 bg-[#2e3038] rounded-lg"
+								className="flex flex-col justify-center items-center py-10 col-span-12 md:col-span-6 lg:col-span-4 bg-[#2e3038] rounded-lg w-[100%]"
 							>
 								<div className="p-4 md:p-8">
+									{/* <Image src={data.url} alt="clint-company-image" quality={100} height={50} width={50} className="w-[80%] mx-auto"/> */}
 									<img className="mx-auto w-[80%]" src={data.url} alt="" />
 									<h3 className="text-lg md:text-2xl py-8 font-medium text-white text-center tracking-wider">{data.title}</h3>
 									<p className="text-justify font-medium text-base text-gray-300 font-sans py-2">{data.description}</p>
@@ -122,7 +128,7 @@ export default function IndexPage() {
 								className="col-span-6 md:col-span-4 lg:col-span-2"
 							>
 								<div className="p-4 md:p-8">
-									<img className="mx-auto h-24 w-24 md:h-32 md:w-32" src={data.url} alt="" />
+									<Image src={data.url} alt="device-image" height={80} width={80} className="h-24 w-24 md:h-32 md:w-32 mx-auto"/>
 									<p className="text-lg md:text-2xl py-8 font-medium text-white text-center tracking-wider">{data.title}</p>
 								</div>
 							</li>
@@ -145,7 +151,7 @@ export default function IndexPage() {
 								className="col-span-12 md:col-span-4"
 							>
 								<div className="p-4 md:p-8">
-									<img className="mx-auto h-24 w-24 md:h-28 md:w-28" src={data.url} alt="" />
+									<Image src={data.url} alt="team-image" height={80} width={80} className="mx-auto"/>
 									<p className="text-lg md:text-xl py-8 font-medium text-white text-center tracking-wider">{data.title}</p>
 								</div>
 							</li>

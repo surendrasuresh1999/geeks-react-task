@@ -9,7 +9,7 @@ const Footer = () => {
             <div className='self-center flex flex-col justify-center items-center'>
                 <h1 className='text-white font-bold text-3xl lg:text-6xl'>Get to know us better!</h1>
                 <p className="text-white my-8  text-lg md:text-xl max-w-[800px] mx-auto text-center">              
-                It is a pleasure to have you on our website. Let us know if there's an opportunity to do something together.
+                It is a pleasure to have you on our website. Let us know if there&apos;s an opportunity to do something together.
                 </p>
                 <button className="my-4 self-center bg-orange-500 text-white font-semibold text-lg rounded-full py-4 px-12 tracking-wider hover:bg-white hover:text-orange-500">
                     Drop us a message
@@ -17,7 +17,7 @@ const Footer = () => {
             </div>
             <div className='grid grid-cols-12 gap-4 pt-14 md:pt-24'>
                 <div className='col-span-12 md:col-span-3'>
-                <Image
+                    <Image
 						src="https://geeksinvention.com/assets/v2/content/geeks-logo-white.svg"
 						alt="Geeks Invention Logo"
 						width={220}
