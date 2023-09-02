@@ -18,7 +18,7 @@ export const Navbar = () => {
 	const[activeIndex, setActiveIndex] = useState(1)
 		
 	return (
-		<NextUINavbar maxWidth="xl" className="z-50 sticky top-0 py-2 bg-red-300">
+		<NextUINavbar maxWidth="xl" className="z-50 sticky top-0 py-3 md:py-5">
 			<NavbarContent className="basis-1/5 sm:basis-full" justify="start">
 				<NavbarBrand className="gap-3 max-w-fit">
 					<NextLink href="/">
