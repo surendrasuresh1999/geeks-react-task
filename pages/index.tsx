@@ -44,7 +44,7 @@ export default function IndexPage() {
 												{dataObj.options.map((option: any) => (
 													<button
 														key={option.id}
-														className={`py-2 px-4 text-white rounded-full bg-[${option.bgColor}] border border-white`}
+														className="py-2 px-4 text-white rounded-full border border-white"
 													>
 														{option.title}
 													</button>
