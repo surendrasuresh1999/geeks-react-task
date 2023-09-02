@@ -9,7 +9,7 @@ const Footer = () => {
             <div className='self-center flex flex-col justify-center items-center'>
                 <h1 className='text-white font-bold text-3xl lg:text-6xl'>Get to know us better!</h1>
                 <p className="text-white my-8  text-lg md:text-xl max-w-[800px] mx-auto text-center">              
-                It is a pleasure to have you on our website. Let us know if there&apos;s an opportunity to do something together.
+                It is a pleasure to have you on our website. Let us know if there is an opportunity to do something together.
                 </p>
                 <button className="my-4 self-center bg-orange-500 text-white font-semibold text-lg rounded-full py-4 px-12 tracking-wider hover:bg-white hover:text-orange-500">
                     Drop us a message
