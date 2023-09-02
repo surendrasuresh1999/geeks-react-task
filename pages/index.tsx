@@ -38,13 +38,13 @@ export default function IndexPage() {
 											<img src={dataObj.url} className="h-full w-full" alt={dataObj.altText} />
 										</div>
 										<div className="px-5 flex flex-col justify-center items-center md:justify-start md:items-start">
-											<h1 className="text-3xl font-semibold py-4 md:text-4xl lg:text-7xl">{dataObj.title}</h1>
-											<p className="text-2xl py-3 font-semibold md:text-2xl lg:text-3xl">{dataObj.subTitle}</p>
+											<h1 className="text-3xl text-white font-semibold py-4 md:text-4xl lg:text-7xl">{dataObj.title}</h1>
+											<p className="text-2xl text-white py-3 font-semibold md:text-2xl lg:text-3xl">{dataObj.subTitle}</p>
 											<div className="flex items-center flex-wrap gap-5 py-4">
 												{dataObj.options.map((option: any) => (
 													<button
 														key={option.id}
-														className={`py-2 px-4 rounded-full bg-[${option.bgColor}] border border-white`}
+														className={`py-2 px-4 text-white rounded-full bg-[${option.bgColor}] border border-white`}
 													>
 														{option.title}
 													</button>
@@ -56,7 +56,7 @@ export default function IndexPage() {
 												className="py-6 h-full w-full block md:hidden"
 											/>
 											
-											<p className="text-xl py-4 lg:py-8 text-justify font-semibold md:text-2xl lg:text-2xl">
+											<p className="text-xl text-white py-4 lg:py-8 text-justify font-semibold md:text-2xl lg:text-2xl">
 												{dataObj.description}
 											</p>
 											<button className="my-7 hover:bg-white hover:text-black font-bold text-lg rounded-full border-white border py-4 px-6 tracking-wider text-white">
@@ -94,14 +94,13 @@ export default function IndexPage() {
 							World's 4th Strongest Banking Brand, Automobile & IoT industry
 						</p>
 					</div>
-					<ul className="grid grid-cols-12 gap-8 py-10 lg:py-20">
+					<ul className="grid grid-cols-12 gap-8 py-10 lg:py-20 px-5">
 						{clientsData.map((data) => (
 							<li
 								key={data.id}
 								className="flex flex-col justify-center items-center py-10 col-span-12 md:col-span-6 lg:col-span-4 bg-[#2e3038] rounded-lg w-[100%]"
 							>
 								<div className="p-4 md:p-8">
-									{/* <Image src={data.url} alt="clint-company-image" quality={100} height={50} width={50} className="w-[80%] mx-auto"/> */}
 									<img className="mx-auto w-[80%]" src={data.url} alt="" />
 									<h3 className="text-lg md:text-2xl py-8 font-medium text-white text-center tracking-wider">{data.title}</h3>
 									<p className="text-justify font-medium text-base text-gray-300 font-sans py-2">{data.description}</p>

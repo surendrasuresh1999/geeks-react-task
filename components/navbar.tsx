@@ -18,7 +18,7 @@ export const Navbar = () => {
 	const[activeIndex, setActiveIndex] = useState(1)
 		
 	return (
-		<NextUINavbar maxWidth="xl"className="z-50 sticky top-0">
+		<NextUINavbar maxWidth="xl" className="z-50 sticky top-0 py-2">
 			<NavbarContent className="basis-1/5 sm:basis-full" justify="start">
 				<NavbarBrand className="gap-3 max-w-fit">
 					<NextLink href="/">
@@ -37,7 +37,7 @@ export const Navbar = () => {
 					{siteConfig.navItems.map((item) => (
 						<NavbarItem key={item.href}>
 							<NextLink
-								className={`${activeIndex === item.id ? "border-b-1.5 text-orange-600" : ""} hover:border-b-1.5 hover:text-orange-600 border-b-orange-600 font-semibold tracking-wider `}
+								className={`${activeIndex === item.id ? "border-b-1.5 text-orange-600" : "text-white"} hover:border-b-1.5 hover:text-orange-600 border-b-orange-600 font-semibold tracking-wider `}
 								href=""
 								onClick={()=>setActiveIndex(item.id)}
 							>

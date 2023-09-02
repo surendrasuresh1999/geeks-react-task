@@ -23,7 +23,7 @@ const Footer = () => {
 						width={220}
 						height={100}
 					/>
-                    <address className='py-4 text-base'>
+                    <address className='py-4 text-base text-white'>
                         447 Broadway, 2nd Floor Suite #772,<br /> New York 10013, United States,
                         <br />
                         +1-347-535-0004
