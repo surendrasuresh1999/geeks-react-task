@@ -28,15 +28,13 @@ export default function IndexPage() {
 										? "bg-[#3f2caa] py-10"
 										: dataObj.id === 2
 											? "bg-[#01b5ac] py-10"
-											: "bg-[#19181e] py-10"
-											
+											: "bg-[#19181e] py-10"		
 								}
 								key={dataObj.id}
 							>
 								<div className="container mx-auto py-10">
 									<div className="grid md:grid-cols-2 gap-x-10 lg:gap-x-20">
 										<div className={`hidden md:block ${dataObj.id === 1 ? "order-1" : ""}`}>
-											
 											<img src={dataObj.url} className="h-full w-full" alt={dataObj.altText} />
 										</div>
 										<div className="px-5 flex flex-col justify-center items-center md:justify-start md:items-start">
@@ -87,7 +85,7 @@ export default function IndexPage() {
 						See all case studies &rarr;
 					</button>
 				</div>
-				{/* receant clients section */}
+				
 				<div className="container flex flex-col justify-center items-center mx-auto py-10 lg:py-20">
 					<div>
 						<h1 className="text-white font-bold text-3xl md:text-5xl lg:text-7xl text-center tracking-wide py-6">Recent clients</h1>
@@ -115,7 +113,7 @@ export default function IndexPage() {
 						See our tech stack &rarr;
 					</button>
 				</div>
-				{/* modern platforms section */}
+				
 				<div className="container flex flex-col mx-auto py-10 lg:py-20">
 					<div>
 						<h1 className="text-white text-3xl md:text-5xl lg:text-7xl text-center tracking-wide py-6">Software for modern platforms</h1>
@@ -138,7 +136,7 @@ export default function IndexPage() {
 						See our tech stack &rarr;
 					</button>
 				</div>
-				{/* dedicated team section */}
+				
 				<div className="container flex flex-col mx-auto py-10 lg:py-28">
 					<div>
 						<h1 className="text-white text-2xl md:text-5xl lg:text-7xl text-center tracking-wide py-6">Only dedicated teams</h1>

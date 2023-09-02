@@ -26,7 +26,7 @@ const Footer = () => {
                     <address className='py-4 text-base'>
                         447 Broadway, 2nd Floor Suite #772,<br /> New York 10013, United States,
                         <br />
-                        +1-347-535-0004 
+                        +1-347-535-0004
                     </address>
                 </div>
 
